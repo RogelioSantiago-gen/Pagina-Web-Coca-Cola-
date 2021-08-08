@@ -269,6 +269,7 @@ footer .redes a {
 
 #servicios .bloque-servicio {
   border: solid 0.5px rgb(94, 9, 9);
+  margin-top: 35px;
 }
 
 #servicios .bloque-servicio .bloque-img-servicio img {
@@ -329,7 +330,7 @@ footer .redes a {
 @media (max-width: 767px) {
   body {
     font-size: 15px;
-    margin: 0 auto;
+    margin-left: 0;
   }
 
   header .container nav {
@@ -349,6 +350,10 @@ footer .redes a {
     transform: translateX(100%);
   }
 
+  header .container .logo {
+    margin-left: 10%;
+  }
+
   header .container nav a {
     font-size: 30px;
     margin: 15px 0;
@@ -357,8 +362,7 @@ footer .redes a {
     display: block;
     font-size: 26px;
     color: #f00c0c;
-    margin: 0 auto;
-    margin-left: 50%;
+    margin: 0 90px;
   }
 
   .container {
@@ -384,7 +388,7 @@ footer .redes a {
   }
 
   #inicio .bloque-inicio {
-    width: 140%;
+    width: 144%;
     font-size: 0.7em;
     margin-top: 30%;
   }
