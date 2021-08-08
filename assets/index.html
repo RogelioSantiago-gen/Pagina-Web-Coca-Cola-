@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon_coca-cola.png">
@@ -24,8 +25,9 @@
                 <a href="#nosotros">Nosotros</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#galeria">Galeria</a>
-                <a href="#contactenos">Contactanos</a>
+                <a href="../contacto.html">Contacto</a>
             </nav>
+            <a href="#" class="hamburguesa"><i class="fas fa-bars"></i></a>
         </div>
 
     </header>
@@ -34,52 +36,55 @@
             <img src="img/pexels-edward-eyer-1066860.jpg" alt="imagen de fondo Coca-Cola">
              <div class="bloque-inicio">
                  <h1>Bienvenidos a Coca Cola</h1>
-                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, id obcaecati eveniet nostrum commodi voluptatem blanditiis ab quaerat debitis asperiores autem, eaque sapiente eligendi architecto, deleniti accusantium quo ullam numquam.</p>
+                 <p>Vayas a donde vayas, hay tres iconos que todo el mundo conoce: Jesús, Pelé y Coca Cola.
+                     <br>
+                     -Pelé.</p>
                  <a href="#nosotros" class="boton boton-rojo">Ver más</a>
              </div>
         </section>
         <section id="nosotros" class="seccion">
-            <div class="container">   
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, id obcaecati eveniet nostrum commodi voluptatem blanditiis ab quaerat debitis asperiores autem, eaque sapiente eligendi architecto, deleniti accusantium quo ullam numquam.</p>                
+            <div class="container" id="nosotros">   
+                <p>Coca-Cola® Sabor original. <br> La de siempre, original y deliciosa. <br> Fue creada en 1886 por el farmacéutico Dr. John Pemberton, siendo la bebida que desde hace más de 130 años, te acompaña de una forma especial en ciertos momentos cotidianos de tu vida.</p>                
             </div>
 
         </section>
-        <section id="servicios"  class="seccion">
+        <section id="servicios"  class="seccion seccion-mobile">
             <div class="container">
                 <div class="row">
-                    <div class="columna columna-33">
+                    <div class="columna columna-33 columna-mobile-100">
                         <div class="bloque-servicio">
                             <div class="bloque-img-servicio cuadrado-perfecto">
-                                <img src="img/anna-bratiychuk-PO1leXXStec-unsplash.jpg" alt="">
+                                <img src="img/servicio1.jpg" alt="">
                             </div>
                             <div class="bloque-contenido-servicio">
                                 <h3>Servicio 1</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate accusamus omnis in, laudantium modi quod dolor nesciunt. Quibusdam magni illo labore, itaque similique culpa exercitationem voluptatibus ut! Odit, officiis voluptatem.</p>
-                                <a href="#" class="boton boton-blanco">Ver mas</a>
+                                <p>Distribución Nacional <br> CEDIS</p>
+
+                                <a href="#" class="boton boton-blanco">Ver más</a>
                             </div>
                         </div>
                     </div>
-                    <div class="columna columna-33">
+                    <div class="columna columna-33 columna-mobile-100">
                         <div class="bloque-servicio">
                             <div class="bloque-img-servicio cuadrado-perfecto">
-                                <img src="img/pexels-sarah-deal-2418480.jpg" alt="">
+                                <img src="img/servicio2.jpg" alt="">
                             </div>
                             <div class="bloque-contenido-servicio">
                                 <h3>Servicio 2</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate accusamus omnis in, laudantium modi quod dolor nesciunt. Quibusdam magni illo labore, itaque similique culpa exercitationem voluptatibus ut! Odit, officiis voluptatem.</p>
-                                <a href="#" class="boton boton-blanco">Ver mas</a>
+                                <p>Maquina Vending <br> En cualquier lugar</p>
+                                <a href="#" class="boton boton-blanco">Ver más</a>
                             </div>
                         </div>
                     </div>
-                    <div class="columna columna-33">
+                    <div class="columna columna-33 columna-mobile-100">
                         <div class="bloque-servicio">
                             <div class="bloque-img-servicio cuadrado-perfecto">
                                 <img src="img/adam-birkett-eL0INEtrdP0-unsplash.jpg" alt="">
                             </div>
                             <div class="bloque-contenido-servicio">
                                 <h3>Servicio 3</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate accusamus omnis in, laudantium modi quod dolor nesciunt. Quibusdam magni illo labore, itaque similique culpa exercitationem voluptatibus ut! Odit, officiis voluptatem.</p>
-                                <a href="#" class="boton boton-blanco">Ver mas</a>
+                                <p>ENVÍO GRATIS. <br> Sin monto mínimo de compra.</p>
+                                <a href="#" class="boton boton-blanco">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -89,32 +94,32 @@
         <section id="galeria">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/toa-heftiba-fcuJkKba3ic-unsplash.jpg" alt="">
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/danial-shoorangiz-GbXR2dL9yE0-unsplash.jpg" alt="">
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/pexels-jonathan-borba-2983103.jpg" alt="">
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/mikael-stenberg-cJeGGOI8eE0-unsplash.jpg" alt="">
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/oskar-kadaksoo-pXbQT-4mQg4-unsplash.jpg" alt="">
                         </div>
                     </div>
-                    <div class="columna-33">
+                    <div class="columna-33 columna-mobile-50">
                         <div class="cuadrado-perfecto">
                             <img src="img/taras-chernus-MTTrsZIWDgw-unsplash.jpg" alt="">
                         </div>
@@ -124,38 +129,17 @@
 
         </section>
         <section id="contactenos" class="seccion">
-            <iframe width="714" height="400" id="gmap_canvas" src="https://maps.google.com/maps?width=714&amp;height=400&amp;hl=en&amp;q=Polanco,%20Polanco%20V%20Secc,%20Ciudad%20de%20M%C3%A9xico+(Ciudad%20de%20Mexico)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="columna columna-50 empujar-50">
-                        <form action="" method="POST">
-                            <div class="form-block">
-                                <input type="text" name="nombre" class="form-control" placeholder="Nombre">
-                            </div>
-                            <div class="form-block">
-                                <input type="email" name="email" class="form-control" placeholder=" Email">
-                            </div>
-                            <div class="form-block">
-                               <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                            </div>
-                            <div class="form-block bloque-ultimo">
-                              <input type="submit" class="boton boton-negro" value="Enviar">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-          
+            <iframe width="714" height="400" id="gmap_canvas" src="https://maps.google.com/maps?width=714&amp;height=400&amp;hl=en&amp;q=Polanco,%20Polanco%20V%20Secc,%20Ciudad%20de%20M%C3%A9xico+(Ciudad%20de%20Mexico)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>  
         </section>
 
     </main>
     <footer>
         <div class="container">
             <div class="row">
-                 <div class="columna columna-25">
+                 <div class="columna columna-25 columna-mobile-100">
                     <img src="img/logo-blanco-cocacola.png" class="logo-footer"> 
                  </div>
-                 <div class="columna columna-25">
+                 <div class="columna columna-25 columna-mobile-100">
                     <h3>
                         Datos de contacto
                      </h3>
@@ -165,7 +149,7 @@
                           <li><a href="#">Tel. (52-55) 1519 5000</a></li>
                       </ul>
                  </div>
-                 <div class="columna columna-25">
+                 <div class="columna columna-25 columna-mobile-100">
                     <h3>
                         Redes sociales
                     </h3>

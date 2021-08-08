@@ -8,13 +8,29 @@ body {
     font-family: 'Raleway', sans-serif; */
 }
 
+body::-webkit-scrollbar {
+  width: 10px; /* Tamaño del scroll en vertical */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+  background: rgb(241, 8, 8);
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+  background-color: #f00c0c;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+body::-webkit-scrollbar-track {
+  background: #fffbfb;
+  border-radius: 4px;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
-}
-
-p {
-  color: black;
 }
 
 header {
@@ -38,18 +54,28 @@ header .container .logo {
 }
 
 header .container nav a {
-  color: red;
+  color: rgb(255, 3, 3);
   text-decoration: none;
   margin: 0 15px;
 }
+
+header .container .hamburguesa {
+  display: none;
+}
+
 header .container nav a:hover {
-  text-decoration: underline;
+  color: black;
+}
+
+p {
+  width: 100%;
 }
 
 footer {
   background-color: black;
   color: white;
   padding-top: 40px;
+  height: 280px;
 }
 
 footer .barra-footer {
@@ -59,11 +85,13 @@ footer .barra-footer {
   padding-left: 15px;
   padding-bottom: 15px;
   padding-top: 5px;
+  margin-top: 50px;
 }
 
 footer ul {
   padding-left: 0;
   list-style: none;
+  margin: 0;
 }
 
 footer ul li {
@@ -85,15 +113,16 @@ footer .redes {
 }
 
 footer .redes a {
-  margin: 0 7.5px;
+  margin: 0 17.5px;
 }
 
 .boton {
   text-align: center;
   text-decoration: none;
   padding: 15px 20px;
-  border-radius: 10px;
+  border-radius: 2px;
   border: none;
+  cursor: pointer;
 }
 
 .boton.boton-rojo {
@@ -127,6 +156,10 @@ footer .redes a {
 .seccion {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.seccion.seccion-mobile {
+  margin-top: -50px;
 }
 
 .cuadrado-perfecto {
@@ -204,8 +237,8 @@ footer .redes a {
 #inicio .bloque-inicio {
   position: absolute;
   top: 25%;
-  left: 46%;
-  width: 500px;
+  left: 35%;
+  width: 850px;
   text-align: center;
   margin-left: -200px;
 }
@@ -217,12 +250,12 @@ footer .redes a {
 
 #inicio .bloque-inicio p {
   color: white;
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-family: "Poppins", sans-serif;
 }
 
 #nosotros {
-  background-image: url(../img/danial-shoorangiz-GbXR2dL9yE0-unsplash.jpg);
+  background-image: url(../img/taras-chernus-MTTrsZIWDgw-unsplash.jpg);
   background-size: cover;
   color: white;
   text-align: center;
@@ -235,7 +268,7 @@ footer .redes a {
 }
 
 #servicios .bloque-servicio {
-  border: 1px solid gray;
+  border: solid 0.5px rgb(94, 9, 9);
 }
 
 #servicios .bloque-servicio .bloque-img-servicio img {
@@ -257,10 +290,8 @@ footer .redes a {
 }
 
 #servicios .bloque-servicio .bloque-contenido-servicio p {
-  font-family: "Raleway", sans-serif;
-  font-size: 1em;
-  color: black;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
 }
 
 #galeria h4 {
@@ -284,6 +315,7 @@ footer .redes a {
 
 #contactenos {
   position: relative;
+  padding-bottom: 400px;
 }
 
 #contactenos iframe {
@@ -294,32 +326,99 @@ footer .redes a {
   height: 100%;
 }
 
-#contactenos form {
-  padding: 50px;
-  background-color: red;
-  border-radius: 10px;
-}
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+     margin: 0 auto;
+  }
 
-#contactenos form .form-block {
-  width: 100%;
-  margin-bottom: 15px;
-}
-#contactenos form .form-block .form-control {
-  display: block;
-  height: 40px;
-  font-size: 1em;
-  border: 1px solid gray;
-  width: 100%;
-  padding: 5px 10px;
-}
-#contactenos form .form-block textarea {
-  display: block;
-  height: 100px;
-  font-size: 1em;
-  border: 1px solid gray;
-  width: 100%;
-  padding: 5px 10px;
-}
-#contactenos form .form-block.bloque-ultimo {
-  margin-bottom: 0;
+  header .container nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    transform: translateX(100%);
+  }
+
+  header .container nav a {
+    font-size: 30px;
+    margin: 15px 0;
+  }
+  header .container .hamburguesa {
+    display: block;
+    font-size: 26px;
+    color: #f00c0c;
+    margin: 0 auto;
+    margin-left: 50%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .columna-mobile-100 {
+    width: 100%;
+  }
+
+  .columna-mobile-50 {
+    width: 50%;
+  }
+
+  #inicio {
+    height: 100vh;
+  }
+
+  #inicio img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #inicio .bloque-inicio {
+    width: 140%;
+    font-size: 0.7em;
+    margin-top: 30%;
+  }
+
+  #inicio .bloque-inicio p {
+    width: 60%;
+    margin-left: 18%;
+  }
+
+  #servicios .bloque-servicio {
+    margin-bottom: 15px;
+  }
+
+  #contactenos {
+    padding: 0;
+  }
+  #contactenos iframe {
+    position: relative;
+    height: 40vh;
+  }
+
+  footer .logo-footer {
+    width: 50%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 1em;
+    height: 70vh;
+  }
+
+  footer .redes {
+    justify-content: center;
+  }
 }
